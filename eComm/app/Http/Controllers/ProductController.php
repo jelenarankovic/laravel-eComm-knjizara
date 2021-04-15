@@ -78,7 +78,7 @@ class ProductController extends Controller
     function orderPlace(Request $req)
     {
         $userId=Session::get('user')['id'];
-        return $allCart=Cart::where('user_id',$userId)->get();
+        $allCart=Cart::where('user_id',$userId)->get();
         foreach($allCart as $cart)
         {
             $order = new Order;
@@ -89,8 +89,20 @@ class ProductController extends Controller
             $order->payment_status="pending";
             $order->address=$req->address;
             $order->save();
+            Cart::where('user_id',$userId)->delete();
         }
-        return $req->input();
+         $req->input();
+         return redirect('/');
+    }
+    function myOrders()
+    {
+        $userId=Session::get('user')['id'];
+        $orders = DB::table('orders')
+        ->join('products','orders.product_id','=','products.id')
+        ->where('orders.user_id',$userId)
+        ->get();
+
+        return view('myorders',['orders'=>$orders]); 
     }
 }
 
