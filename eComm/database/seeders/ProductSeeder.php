@@ -49,7 +49,18 @@ class ProductSeeder extends Seeder
             "description"=>"It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children.While Harry grapples with a past that refuses to stay where it belongs, his youngest son, Albus, must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: Sometimes, darkness comes from unexpected places.",
            "category"=>"fantasy",
            "gallery"=>"https://thumbs.dreamstime.com/z/cali-colombia-april-beautiful-vintage-decoration-famous-books-like-harry-potter-j-k-rowling-agatha-christie-more-180324721.jpg"
+            ],
+            [
+            'name'=>'The complete Persepolis',
+            "price"=>"1100",
+            "description"=>"Persepolis is the story of Satrapi's unforgettable childhood and coming of age within a large and loving family in Tehran during the Islamic Revolution; of the contradictions between private life and public life in a country plagued by political upheaval; of her high school years in Vienna facing the trials of adolescence far from her family; of her homecoming--both sweet and terrible; and, finally, of her self-imposed exile from her beloved homeland. It is the chronicle of a girlhood and adolescence at once outrageous and familiar, a young life entwined with the history of her country yet filled with the universal trials and joys of growing up.
+
+            Edgy, searingly observant, and candid, often heartbreaking but threaded throughout with raw humor and hard-earned wisdom--Persepolis is a stunning work from one of the most highly regarded, singularly talented graphic artists at work today.",
+           "category"=>"graphic memoir, biography",
+           "gallery"=>"https://thumbs.dreamstime.com/z/cali-colombia-april-beautiful-vintage-decoration-famous-books-like-harry-potter-j-k-rowling-agatha-christie-more-180324316.jpg"
             ]
         ]);
     }
 }
+
+
