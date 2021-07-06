@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     //
+    
     function index()
     {
         $data=Product::all();
@@ -105,4 +106,3 @@ class ProductController extends Controller
         return view('myorders',['orders'=>$orders]); 
     }
 }
-

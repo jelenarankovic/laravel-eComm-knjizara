@@ -17,6 +17,7 @@
     
 </body>
 <style>
+ 
 .custom-login{
     height: 600px;
     padding-top: 100px;
@@ -45,7 +46,7 @@ width: 60%;
         margin: 30px;
     }
     .detail-img{
-        height: 200px;
+        height: 400px;
     }
     .search-box{
         width: 500px !important;
